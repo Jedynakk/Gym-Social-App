@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@500&display=swap');
+
+
+.container {
+    width: 50rem;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+
+
+body {
+    background-color: rgb(244, 244, 244);
+}
+
+.profile_image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+
+.profile_box {
+    width: 45rem;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: #171717;
+    border: solid;
+    border-bottom-width: 1px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: auto;
+}
+
+.button {
+    position: relative;
+    top: -6rem;
+    left: 40rem;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ffc800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.username {
+    position: relative;
+    left: 5rem;
+    top: -2rem;
+    width: 5rem;
+    height: 3rem;
+    font-family: 'Montserrat', sans-serif;
+
+}

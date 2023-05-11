@@ -1,0 +1,43 @@
+{%load static%}
+<link rel="stylesheet" href="{% static '/css/exercise_list.css' %}">
+{% include "other/navbar.html" %}
+
+<title>ALL EXERCISES</title>
+
+
+
+
+<div class="filter">
+    <div class="select">
+    <form method="GET">
+        <select name="muscle">
+                {%for m in muscle %}
+                    <option value="{{m.0}}">{{m.1}}</option>
+                {%endfor%}
+        </select>
+        <input type="submit" value="FILTRUJ">
+    </form>
+</div>
+    <form method="GET">
+        <input name='searched' class='search' type='text' placeholder="Search...">
+        <input type='submit' class='search_btn' value="Search">
+    </form>
+
+
+</div>
+
+
+<div class="top_exercise_box"></div>
+<div class="content">
+{% for exercise in exercises %}
+    <div class="exercise_box">
+        {% if exercise.exercise_image %}
+            <img class="exercise_image" src="{{ exercise.exercise_image.url }}">
+        {%endif%}
+        <a class='name' href="{% url 'exercise' exercise.id %}">
+           {{exercise.name}}
+        </a>
+        <div class='muscle_part'>{{exercise.get_muscle_display}}</div>
+    </div>
+{%endfor%}
+</div>

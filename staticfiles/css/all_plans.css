@@ -1,0 +1,10 @@
+    body {
+        background-color: rgb(244, 244, 244);
+    }
+
+    .content {
+        margin: auto;
+        width: 80rem;
+        height: 100%;
+        background-color: rgb(162, 74, 74);
+    }

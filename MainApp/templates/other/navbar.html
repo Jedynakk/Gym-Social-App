@@ -1,0 +1,49 @@
+{% load static %}
+
+
+<link rel="stylesheet" href="{% static 'css/other/navbar.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<body class="body">
+<div class="box">
+<ul class="nav_bar_icons">
+
+    <li class="li_profile"><button class="btn"><a href="{% url "my_profile" profile.id %}"><i class="fa-regular fa-user fa-2xl"></i></a></button></li>
+
+    <li class="li_nav"><button class="btn"><a href="{% url 'home' %}"><i class="fa-regular fa-house fa-2xl"></i></a></button></li>
+
+    {% comment %} <li class="li_nav"><button class="btn"><a href="{% url 'today' %}"><i class="fa-sharp fa-regular fa-calendar-week fa-2xl" style="color: #ffc800;"></i></button></li> {% endcomment %}
+
+{% comment %} PLANS {% endcomment %}
+
+    <li class="li_nav" id="plans"><button class="btn"><i class="fa-regular fa-dumbbell fa-2xl"></i></button></li> 
+         <ul  class="li_hidden" id="plans_extended">
+            <li class="extended_li"><a href="{% url 'add_plan' %}">NEW PLAN</a></li>
+            <li class="extended_li">MY PLANS</li>
+            <li class="extended_li">MY TRAININGS</li>
+        </ul> 
+{% comment %} EXERCIES {% endcomment %}
+    <li class="li_nav" id="explore"><button class="btn"><i class="fa-regular fa-compass fa-2xl"></i></button></li>
+       <ul class="li_hidden" id="explore_extended">
+            <li class="extended_li"><a href="{% url 'all_plans' %}">ALL PLANS</a></li>
+            <li class="extended_li"><a href="{% url 'exercises_list' %}">ALL EXERCIES</a></li>
+       </ul>
+{% comment %} FRIENDS {% endcomment %}
+
+    <li class="li_nav" id="friends"><button class="btn"><i class="fa-regular fa-user-group fa-2xl"></i></button></li>
+    <ul class="li_hidden"  id="friends_extended">
+            <li class="extended_li"><a href="{% url 'all_profiles' %}">PROFILES</a></li>
+            <li class="extended_li"><a href="{% url 'requests_list' %}">REQUESTS</a></li>
+            <li class="extended_li"><a href="{% url 'friends_list' %}">LIST OF FRIENDS</a></li>
+    </ul> 
+    
+    <li class="li_nav" ><button class="btn"><i class="fa-regular fa-circle-check fa-2xl"></i></button></li>
+        
+</ul>
+
+
+</div>
+    <script src="{% static 'js/navbar.js' %}"></script>
+</body>

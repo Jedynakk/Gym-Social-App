@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/exercise.css' %}">
+<title>{{exercise.name}}</title>
+{% comment %} {% include "other/navbar.html" %} {% endcomment %}
+{% include "other/navbar.html" %}
+
+<div class="content">
+    <div class="name">{{exercise.name}}</div>
+    <div class="description">{{exercise.description}}</div>
+    <img class="image" src="{{ exercise.exercise_image.url }}">
+    
+    <form action="" method="POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form.as_p}}
+        <input type="submit">
+    </form>
+
+</div>

@@ -1,0 +1,27 @@
+{%load static%}
+{% include "other/navbar.html" %}
+<link rel="stylesheet" href="{% static '/css/plan_details.css' %}">
+
+<div class='content'>
+
+
+<p>
+{{plan.name}}
+{{plan.author.profile_username}}
+<p>
+
+
+    
+<button type="submit", onclick="location.href='{% url "set_current_plan" plan.id  %}'">SET AS CURRENT PLAN</button></p>
+
+
+
+{% for day in days%}
+    <ul>{{day.1}} &nbsp </ul>
+        {% for e in exercise_to_plan %}
+            {%if e.day_name == day.0%}
+                    <li><a href="{% url 'exercise_in_plan' e.id %}">{{e.exercise}}</a></li>
+            {%endif%}
+        {%endfor%}
+{%endfor%}
+</div>

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@500&display=swap');
+
+
+.name {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    position: relative;
+    top: 5rem;
+    left: 20rem;
+}
+
+.description {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    position: relative;
+    top: 5rem;
+    left: 22rem;
+}
+
+
+.image {
+    position: relative;
+    left: 70rem;
+}

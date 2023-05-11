@@ -1,0 +1,24 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/profile_list.css' %}">
+
+{% include "other/navbar.html" %}
+
+
+<body>
+<header>{{profile.profile_username}}</header>
+
+<div class="container">
+    {% for p in all_profiles%}
+    <div class="profile_box">
+        {% if p.profile.profile_image%}
+            <img class="profile_image" src="{{ p.profile_image.url }}">
+        {%else%}
+            <img  class="profile_image" src="{% static 'images/profpic.png'%}">
+        {%endif%}
+        <p class="username">{{p.profile_username}}</p>
+        <button class="button" type="submit", onclick="location.href='{% url 'request' p.id %}'">ADD TO FRIENDS</button><br>
+    </div>
+    {%endfor%}
+    </div>
+</body> 
+

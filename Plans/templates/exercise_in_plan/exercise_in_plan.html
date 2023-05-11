@@ -1,0 +1,16 @@
+
+{% include "other/navbar.html" %}
+
+
+{{exercise_to_plan.exercise.name}} {{exercise_in_plan.day_name}}
+
+<form  action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit">
+</form>
+
+
+{% for s in sets %}
+    <p>{{s.reps}}x{{s.weight}}{{s.si}}   {{s.date}}</p>
+{% endfor %}

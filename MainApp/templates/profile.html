@@ -1,0 +1,30 @@
+{% load static %}
+{% include "other/navbar.html" %}
+
+
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+
+
+ 
+
+
+<body>
+    
+    <div class="content">
+
+        {% if profile.profile_image %}
+           <div class="circle"> <img class="image" src="{{ profile.profile_image.url }}"></div>
+        {% endif %}
+
+
+<header class="username">@{{profile.profile_username}}</header>
+<div class="bio">{{profile.bio}}</div>
+<div class="info_about_profile">Height:{{profile.height}} Weight:{{profile.weight}}</div>
+<div class="profile_links">Friends: {{friends}} My plans</div>
+
+<h3><button class="edit_profile"><a href="{% url 'update_profile' profile.id %}">Edit Profile</a></button></h3>
+
+</div>
+</body>
+
+

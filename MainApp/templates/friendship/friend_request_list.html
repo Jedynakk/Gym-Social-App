@@ -1,0 +1,22 @@
+
+
+{% include "other/navbar.html" %}
+
+
+
+<header>{{profile.profile_username}}</header>
+
+
+
+<body>
+    <p>YOU HAVE BEEN INVATED BY:</p>
+    {% for r in friend_requests %}
+       <p> {{r.sender.profile_username}} INVATES YOU TO FRIENDS </p>
+       <button type="submit", onclick="location.href='{% url "accept_request" r.id  %}'">ACCEPT</button>
+       <button type="submit", onclick="location.href='{% url "delete_request" r.id  %}'">DELETE</button><br>
+    {% endfor %}
+    <p>YOU HAVE INVARTE</p>
+    {% for r in fri_req %}
+    <p> {{r.recipient.profile_username}} <button type="submit", onclick="location.href='{% url "delete_request" r.id  %}'">DELETE</button></p>
+    {% endfor %}
+</body>       

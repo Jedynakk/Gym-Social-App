@@ -1,0 +1,30 @@
+{% load static %}
+{% include "other/navbar.html" %}
+<link rel="stylesheet" href="{% static 'css/all_plans.css' %}">
+<body>
+
+    <div class='filter_box'>
+        <form method="GET">
+            <input name='searched' class='search' type='text' placeholder="Search...">
+            <input type='submit' class='search_btn' value="Search">
+        </form>
+    </div>
+    <div class='top_plan_box'>
+    </div>
+<div class="content">
+    {% for p in plans %}
+        <div class="plan_box"><a class="name" href="{% url "plan_details" p.id %}">{{p.name}}</a>
+            <div class="author"> @{{p.author.profile_username}}</div>
+                {% if p.author.profile_image %}
+                    <img class="author_img" src="{{ p.author.profile_image.url }}">
+                {% else %} 
+                    <img  class="author_img" src="{% static 'images/profpic.png'%}">
+                {% endif %}
+            {{p.like}}
+            </div>
+
+    {%endfor%}
+</div>
+
+
+</body>

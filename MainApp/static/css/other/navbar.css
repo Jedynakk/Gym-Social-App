@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=News+Cycle&display=swap');
+
+.box {
+    background-color: #171717;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5rem;
+    height: 100%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.li_nav {
+    padding-top: 1rem;
+    list-style: none;
+}
+
+.li_profile {
+    padding-bottom: 3rem;
+    list-style: none;
+}
+
+.extended {
+    background-color: #171717;
+    width: 9rem;
+    height: 7rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+
+.extended_li {
+    position: relative;
+    top: 1rem;
+    list-style: none;
+    padding: 0.2rem;
+}
+
+.li_hidden {
+    display: none;
+}
+
+
+.extended_li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'News Cycle', sans-serif;
+}
+
+
+
+
+.nav_bar_icons {
+    position: absolute;
+    left: -1rem;
+}
+
+
+.btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #171717;
+    border: none;
+    cursor: pointer;
+}
+
+
+.nav_bar_icons i {
+    color: #ffb700
+}
+
+.nav_bar_icons i:hover {
+    color: #ffc83b;
+    scale: 1.5;
+
+}

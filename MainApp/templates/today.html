@@ -1,0 +1,40 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/today.css' %}">
+
+
+
+<body>
+<div class="today" id="today">{{today}}</div>
+
+
+
+
+<p>
+{{plan.plan.name}}
+
+    <ul class="days" >
+    {% for day in days%}
+        <div class="day">{{day.1}}</div>
+    {%endfor%}
+    </ul>
+</p>
+
+
+
+
+{% for day in days%}
+{%if day.0 == today %}
+    <ul><div class="td" id="td">{{day.1}} &nbsp </div></ul>
+        {% for e in exercise_to_plan %}
+            {%if e.day_name == day.0%}
+                    <li><a href="{% url 'exercise_in_plan' e.id %}">{{e.exercise}}</a></li>
+            {%endif%}
+        {%endfor%}
+    {%endif%}
+
+{%endfor%}
+
+</p>
+
+<script src="{% static 'js/today.js' %}"></script>
+</body>

@@ -1,0 +1,1 @@
+let postBox = document.querySelectorAll(".post_box")

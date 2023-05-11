@@ -1,0 +1,32 @@
+.today {
+    color: brown;
+}
+
+.day {
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(225, 225, 225);
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+
+.days {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.test {
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(30, 233, 7);
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 1rem;
+    text-align: center;
+
+}

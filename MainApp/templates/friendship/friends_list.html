@@ -1,0 +1,12 @@
+{% include "other/navbar.html" %}
+
+<header>@{{profile.profile_username}}</header>
+
+
+
+{% for friendship in friends_list %} 
+{% if friendship.current_user.id != profile.id %}
+<p>{{friendship.current_user.profile_username}}</p>
+{% else %}
+<p>{{ friendship.friend.profile_username }}</p>
+{% endif %} {% endfor %}

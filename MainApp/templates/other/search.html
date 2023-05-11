@@ -1,0 +1,7 @@
+{{current_user}}
+{% include "other/navbar.html" %}
+<h2>You searched for {{searched}}</h2>
+{%for u in searched_user %}
+    {{ u }}
+    <button type="submit", onclick="location.href='{% url 'request' u.id %}'">ADD TO FRIENDS</button><br>
+{%endfor%}

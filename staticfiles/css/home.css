@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@500&display=swap');
+
+
+body {
+    background-color: rgb(244, 244, 244);
+}
+
+
+.content {
+    height: 100%;
+    width: 40rem;
+    background-color: white;
+    margin: auto;
+    overflow-x: scroll;
+}
+
+
+.form_box {
+    width: 40rem;
+    height: 7rem;
+    -webkit-box-shadow: 0px 14px 8px -1px rgba(226, 226, 226, 1);
+    -moz-box-shadow: 0px 14px 8px -1px rgba(226, 226, 226, 1);
+    box-shadow: 0px 14px 8px -1px rgba(226, 226, 226, 1);
+}
+
+
+.form {
+    width: 25rem;
+    height: 2rem;
+    border-color: #171717;
+    border: solid;
+    border-bottom-width: 1px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 1rem;
+}
+
+
+.author_img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+
+
+
+.post_box {
+    height: auto;
+    width: 40rem;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: #171717;
+    border: solid;
+    border-bottom-width: 1px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+
+.post_box_image {
+    height: auto;
+    width: 40rem;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: #171717;
+    border: solid;
+    border-bottom-width: 1px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+
+
+.post_image {
+    justify-content: center;
+    max-width: 16.3rem;
+    max-height: 28.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -3rem;
+
+}
+
+
+
+.post {
+    width: 25rem;
+    position: relative;
+    left: 5rem;
+    top: -4rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.random_profile_box {
+    width: 19rem;
+    height: 13rem;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 22px 18px 56px 5px rgba(66, 68, 90, 0.34);
+    -moz-box-shadow: 22px 18px 56px 5px rgba(66, 68, 90, 0.34);
+    box-shadow: 22px 18px 56px 5px rgba(66, 68, 90, 0.34);
+    position: absolute;
+    right: 3rem;
+    top: 8rem;
+    border-radius: 1rem;
+}
+
+.random_profile_box p {
+    text-align: left;
+    position: relative;
+    left: 2rem;
+
+}
+
+.username {
+    position: relative;
+    left: 5rem;
+    top: -2rem;
+    width: 5rem;
+    height: 3rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.like {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    top: -5rem;
+    left: 1rem;
+}
+
+.likes {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: -2.7rem;
+    left: 3.5rem;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=News+Cycle&display=swap');
+
+
+img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 30rem;
+    border: 5px solid rgb(255, 234, 0);
+    position: absolute;
+    left: 10rem;
+    top: 2rem
+}
+
+
+.info_about_profile {
+    height: 10rem;
+    width: 50rem;
+    position: absolute;
+    right: 0px;
+    top: 15rem;
+    background-color: #171717;
+    border-radius: 3rem 0 0 3rem;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'News Cycle', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.profile_links {
+    height: 10rem;
+    width: 50rem;
+    position: absolute;
+    left: 5rem;
+    top: 28rem;
+    background-color: #171717;
+    border-radius: 0 3rem 3rem 0;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'News Cycle', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.username {
+    font-family: 'DM Serif Display', serif;
+    font-family: 'News Cycle', sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+    position: absolute;
+    left: 25rem;
+
+}
+
+.edit_profile {
+    position: absolute;
+    left: 30rem;
+    top: 10rem;
+}
+
+
+
+.bio {
+    font-family: 'DM Serif Display', serif;
+    font-family: 'News Cycle', sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    position: absolute;
+    left: 25rem;
+    top: 8rem;
+
+}

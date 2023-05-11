@@ -1,0 +1,97 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+
+{% include "other/navbar.html" %}
+<body>
+
+    <form method='POST' action="{% url "search" %}">
+        {% csrf_token %}
+        <input type="search" class="search_box" placeholder="search", name="searched">
+        <input type="submit" placeholder="search">
+    </form> 
+    </li>
+
+    
+
+
+<div class="random_profile_box">
+    {{liked_posts}}
+</div>
+
+
+
+<div class="content">
+    <div class="form_box">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+                {{ form.as_p }}
+            <input type="submit">
+        </form>
+    </div>
+{% for p in posts %}
+    {% if p.post_image %}
+        <div class="post_box_image">
+            {% if p.author.profile_image %}
+                <img class="author_img" src="{{ p.author.profile_image.url }}">
+            {% else %} 
+                <img  class="author_img" src="{% static 'images/profpic.png'%}">
+            {% endif %}
+
+            
+
+        
+            {% comment %} {% if p.author.id == profile.id %}
+            <button class='delete' type="submit", onclick="location.href='{% url "delete_post" p.id  %}'">DELETE</button>
+
+            {% endif %} {% endcomment %}
+
+            <p class='username'>@{{p.author.profile_username}}{{p.LikedPost}}</p>
+            <div class='post'><p class='text'>{{ p.text}}</p></div>
+            <img class="post_image" src="{{ p.post_image.url }}">
+            <p class='likes'>{{p.CountLikes}}</p>
+            <button class='like' type="submit", onclick="location.href='{% url "like_post" p.id  %}'">
+                {% if p.id in liked_post%}
+                    <i class="fa-solid fa-heart fa-2xl" style="color: #e32400;"></i>
+                {%else%}
+                    <i class="fa-regular fa-heart fa-2xl"></i>
+                {%endif%}
+            
+            </button>
+        </div>
+    {%else%}
+        <div class="post_box">
+            {% if p.author.profile_image %}
+                <img class="author_img" src="{{ p.author.profile_image.url }}">
+            {% else %} 
+                <img  class="author_img" src="{% static 'images/profpic.png'%}">
+            {% endif %}
+
+            {% comment %} {% if p.author.id == profile.id %}
+            <button class='delete' type="submit", onclick="location.href='{% url "delete_post" p.id  %}'">DELETE</button>
+
+            {% endif %} {% endcomment %}
+
+            <p class='username'>@{{p.author.profile_username}}</p>
+            <div class='post'><p class='text'>{{ p.text}}</p></div>
+            <p class='likes'>{{p.CountLikes}}</p>
+            <button class='like' type="submit", onclick="location.href='{% url "like_post" p.id  %}'">
+            {% if p.id in liked_post%}
+                <i class="fa-solid fa-heart fa-2xl" style="color: #e32400;"></i>
+            {%else%}
+                <i class="fa-regular fa-heart fa-2xl"></i>
+            {%endif%}
+            </button>
+    </div>
+
+
+    {%endif%}
+            
+
+        
+{% endfor %}
+    </div>
+
+
+
+</body>

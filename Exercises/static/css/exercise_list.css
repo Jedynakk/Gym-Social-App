@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@500&display=swap');
+
+
+.filter {
+    height: 8rem;
+    width: 60rem;
+    margin: auto;
+    position: relative;
+    top: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    -webkit-box-shadow: -1px 9px 37px -7px rgba(133, 133, 133, 1);
+    -moz-box-shadow: -1px 9px 37px -7px rgba(133, 133, 133, 1);
+    box-shadow: -1px 9px 37px -7px rgba(133, 133, 133, 1);
+
+}
+
+.content {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    position: relative;
+    top: 5rem;
+    left: 15rem;
+    width: 60rem;
+    height: 40rem;
+    background-color: white;
+    -webkit-box-shadow: -1px 9px 37px -7px rgba(133, 133, 133, 1);
+    -moz-box-shadow: -1px 9px 37px -7px rgba(133, 133, 133, 1);
+    box-shadow: -1px 9px 37px -7px rgba(133, 133, 133, 1);
+    border-radius: 1rem;
+}
+
+.top_exercise_box {
+    position: absolute;
+    top: 14.5rem;
+    left: 82rem;
+    width: 23rem;
+    height: 40rem;
+    background-color: white;
+    -webkit-box-shadow: -1px 9px 37px -7px rgba(133, 133, 133, 1);
+    -moz-box-shadow: -1px 9px 37px -7px rgba(133, 133, 133, 1);
+    box-shadow: -1px 9px 37px -7px rgba(133, 133, 133, 1);
+    border-radius: 1rem;
+}
+
+
+
+
+.exercise_box {
+
+    position: relative;
+    top: 2rem;
+    height: 10rem;
+    width: 25rem;
+    background-color: #171717;
+    border-radius: 1rem;
+}
+
+.exercise_box:hover {
+    background-color: #000000;
+    -webkit-box-shadow: 0px 0px 32px 4px rgba(255, 183, 0, 1);
+    -moz-box-shadow: 0px 0px 32px 4px rgba(255, 183, 0, 1);
+    box-shadow: 0px 0px 32px 4px rgba(255, 183, 0, 1);
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -7.75rem;
+}
+
+.muscle_part {
+    font-family: 'Montserrat', sans-serif;
+    font-size: auto;
+    color: rgb(255, 255, 255);
+
+}
+
+.exercise_image {
+    position: relative;
+    top: 0.25rem;
+    left: 0.25rem;
+    height: 9.5rem;
+    width: 12rem;
+    border-radius: 1rem;
+}
+
+
+
+.search {
+
+    width: 30rem;
+    height: 5rem;
+    background-color: white;
+    margin: auto;
+    border-radius: 1rem;
+    border: solid;
+    position: relative;
+    left: 4rem;
+    top: -1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    outline: none;
+
+}
+
+
+.search:hover {
+    border-color: #ffb700;
+    ;
+}
+
+.select {
+    position: relative;
+    left: 50rem;
+}
+
+.search_btn {
+    width: 10rem;
+    height: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    background-color: #ffb700;
+    position: relative;
+    top: -1rem;
+    left: 5rem;
+    border: none;
+    border-radius: 1rem;
+}
